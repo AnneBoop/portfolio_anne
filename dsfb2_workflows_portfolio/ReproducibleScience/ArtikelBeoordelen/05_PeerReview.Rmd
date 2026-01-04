@@ -1,0 +1,51 @@
+---
+title: "Open Peer Review"
+author: "Anne Bakker"
+date: "2023-12-10"
+output: html_document
+---
+
+```{r iets anders, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+## Artikel
+
+Het artikel dat ik gekozen heb is "Analysis of animal-to-human translation shows that only 5% of animal-tested therapeutic interventions obtain regulatory approval for human applications". 
+
+Hier te vinden:
+https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002667
+
+
+
+## Analyse van 'Repita'-criteria
+
+| Transparency Criteria       | Response type   |
+|-----------------------------|-----------------|
+| Study purpose               |       YES       |
+| Data availability statement |       YES       |
+| Data location               |https://osf.io/frjm4 |
+| Study location              |       YES, SWITZERLAND       |
+| Author review               |       NO       |  
+| Ethics statement            |       NO       |
+| Funding statement           |       YES       |
+| Code availability           |       YES        |
+
+## Verklaring
+Over het algemeen heeft de studie een goede score op de transparantie criteria. Het doel van de study is goed aangegeven in de introductie. De data is beschikbaar gesteld en ook duidelijk te vinden, door middel van een link. Hierbij is ook een link gegeven naar de gebruikte R code. Er staat niet expliciet aangegeven waar de studie heeft plaatsgevonden maar bij het kopje auteurs staat wel waar de auteurs voor werken. Er is kort een stukje over de financiering geschreven, er mist alleen wel een ethische verklaring.
+
+## Algemene doelstelling 
+Het doel van deze studie is om kwantitatief te onderzoeken hoe goed bevindingen uit dierstudies vertaald kunnen worden naar de mens.
+
+## Samenvatting van de methode
+De studie onderzocht dier-naar-mens vertaling van therapeutische interventies via systematische en scoping reviews. Literatuur werd gezocht in Medline, Embase en Web of Science tot augustus 2023, beperkt tot dierstudies. Studies werden geselecteerd, gegevens geëxtraheerd over dier- en klinische studies, uitkomsten en ontwikkeltijden, en kritisch beoordeeld op kwaliteit. Vertaling werd gedefinieerd als het omzetten van dierbevindingen naar menselijke gezondheidsvoordelen. Analyses omvatten beschrijvende statistiek, meta-analyse van relatieve risico’s en Kaplan–Meier analyse van de tijd van dieronderzoek tot klinisch gebruik.
+
+## Wat doet de R code
+In het deel van de R code dat ik heb bekeken en heb uitgevoerd wordt eerst de excel sheet in gelezen. Daarna wordt de data voorbereid en gecategoriseerd (omzetten naar nummeriek of factor). Daarna worden scores omgezet naar labels. In de kolommen 20 tot 32 wordt er genummerd met 0, 1 en 2. Dit zijn een soort risicobeordelingen, deze codes worden omgezet naar high, low, unclear. Daarna wordt voor elke studie geteld hoe vaak high, low en unclear voorkomt. Hierdoor krijg je een overzicht per studie voor hoe risicovol de studie is. Daarna wordt de bias berekent. Dit wordt gedaan op basis van het aantal "low" scores per studie. Veel lage risico-scores -> low (dus betrouwbaar), gemiddeld aantal lage scores -> moderate, Anders -> high (dus mogelijk veel bias). Dit geeft een inzicht over de betrouwbaarheid van elke studie. Daarna wordt de waarde van de studie achterhaald op basis van het aantal dier- en klinische studies die erin zijn opgenomen. Dit percentage geeft aan hoe groot de bijdrage van een studie is aan het totale dataset. Er wordt een risico op bias plot gemaakt.
+
+Ik zou de leesbaarheid van deze R code een 3 geven. Over het algemeen is het een duidelijke code en wordt er duidelijk gemaakt wat er gedaan wordt. Echter is het voor iemand die geen idee heeft van de data wel matig in uitleg. Ik denk dat er duidelijker aangegeven kan worden wat er precies gedaan wordt. Ook is het niet volledig reproduceerbaar op de manier dat de R code is vrijgegeven omdat er een persoonlijke pathway is gebruikt om de data in te lezen.
+
+
+## Beoordeling reproduceerbaarheid van de R code
+Over het algemeen was de R code makkelijk over te nemen en liep ik tegen geen errors aan. Het enige wat ik moest aanpakken was de pathway voor het inlezen van de data, deze was namelijk persoonlijk. Voorderest is het gelukt om minstens 1 figuur te reproduceren. Echter weet ik niet hoe de R code verder verloopt.
+Voor het deel wat ik heb gebruikt zou ik de reproduceerbaarheid van de R code een cijfer 4 geven. 
