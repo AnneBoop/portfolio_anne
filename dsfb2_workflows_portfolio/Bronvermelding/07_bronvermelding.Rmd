@@ -1,0 +1,14 @@
+---
+title: "07_bronvermelding"
+author: "Anne Bakker"
+output: html_document
+bibliography: references.bib
+---
+# Projecticum introductie
+
+Antimicrobiële resistentie (AMR) vormt een ernstig wereldwijd gezondheidsprobleem doordat bacteriën ongevoelig worden voor antibiotica, wat behandeling bemoeilijkt [@Nielsen2022]. Een belangrijke factor is de verspreiding van resistentiegenen via plasmiden, kleine extrachromosomale DNA‑moleculen die horizontale genoverdracht mogelijk maken [@Kerkvliet2024; @Lam2024].
+
+Het classificeren van plasmiden op basis van replicon- of mobiliteitstypen helpt bij het begrijpen van hun rol in multidrug‑resistentie [@Robertson2023]. Bioinformatica‑pijplijnen kunnen grote genomische datasets analyseren, plasmiden reconstrueren en resistentiegenen detecteren, wat cruciaal is voor onderzoek en infectiecontrole [@Zhang2023].
+
+# Referenties
+
