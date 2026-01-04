@@ -1,0 +1,37 @@
+---
+title: "Plan voor de toekomst"
+author: "Anne Bakker"
+date: "2025-8-7"
+output: 
+html_document:
+    css: styles.css
+---
+
+
+```{css, echo=FALSE}
+h1{color: navy;
+border-bottom: 2px solid navy; 
+  padding-bottom: 5px;               
+  margin-bottom: 15px; }
+  
+.text-block{background-color: transparent;
+border: 1px solid lightgrey;
+padding: 15px;
+font-family: Arial;}
+
+```
+
+<h1>Wat is mijn Droombaan</h1>
+<div class="text-block">Tijdens mijn studie heb ik mij gespecialiseerd in dierkunde en daarnaast een minor in data science gevolgd. In november ben ik klaar met mijn studie en wil ik graag één jaar praktijkervaring opdoen waarin ik beide intresses kan combineren.
+Mijn droombaan voor deze periode zou die van biotechnicus zijn binnen een onderzoeksgroep die zich richt op chirurgische ingrepen in het laboratorium, incombinatie met data analyse. 
+Na dit jaar praktijkervaring wil ik met mijn opgedane kennis en vaardigheden een passende masteropleiding volgen. Ik heb nog geen keuze gemaakt in wat voor masteropleiding dit zou zijn, maar voor nu interesseer ik mij vooral in de neurobiologie.</div> 
+
+<h1>Skills die ik al heb</h1>
+<div class="text-block">Ik zal deze vraag alleen vanuit data science vlak beantwoorden, omdat dat voor dit vak het meest relevant is. Ik heb al een goede basis in data-analyse opgedaan door mijn minor data science, met ervaring in R, SQL, statistiek en R shiny. Mijn specialisatie in dierkunde helpt mij om datasets uit dierkundig onderzoek snel te begrijpen en correct te interpreteren.</div>
+
+<h1>Skills die ik nog zou willen leren</h1>
+<div class="text-block">Ik zou me graag verder verdiepen in modellen voor dose respons curves, in de module 'C. elegans' heb ik me hier iets meer in verdiept. Ik denk dat dit een goede skill zou zijn om te leren voor dierkundig onderzoek. Ook zou ik graag de beginselen van de programmeertaal Python willen leren, omdat dit een veelzijdige en breed toegepaste taal is. Ten slotte wil ik mijn vaardigheden in R verder ontwikkelen, zodat ik ook complexere datasets kan verwerken en analyseren.</div>
+
+Bronnen:
+https://www.w3schools.com/html/html_css.asp
+

@@ -1,0 +1,103 @@
+---
+title: CV
+name: Anne
+surname: Bakker
+position: "Life science student"
+address: "-"
+phone: 
+email: "-"
+github: AnneBoop
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: ""
+output: vitae::moderncv
+---
+
+```{r opzetten, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# CV code
+
+## Profiel
+
+Ik ben een derdejaars student life science met een minor in data science. Mijn specialisatie in zoölogie voegt een boeiend perspectief toe aan mijn benadering van data science. Ik hoop in een werkveld te komen waar ik mijn eerste stappen kan zetten als data analist en ervaring op te doen in dit vakgebied.
+
+
+## Opleiding
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Life science; biologie en medisch laboratorium onderzoek", "2020-heden", "Hogeschool Utrecht", "Utrecht",
+  "Specialisatie; Zoölogie", "2023", "Hogeschool Utrecht", "Utrecht",
+  "Minor; Data science", "2023", "Hogeschool Utrecht", "Utrecht",
+  "Profiel; Natuur en Gezondheid", "2020", "Laar en berg", "Laren"
+) %>%
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+
+## Werkervaring
+
+```{r}
+tribble(
+  ~Degree, ~Year, ~Desc,
+ "Woonondersteuner, Stichtse hof", 'april 2023 - heden', "Bij Vivium stichtse hof werk ik als een woonondersteuner, dit houdt in dat ik de bewoners help bij het dagelijks leven. Zo kook ik voor ze, doe ik de afwas, ben ik een hulp bij de maaltijd en heb ik een signaalfunctie",
+  "Order picker, Hema DC", '2022 - heden', "Bij Hema DC heb ik met het ‘pick by light’ systeem gewerkt en heb ik orders verzendklaar gemaakt", 
+ "Pré-analist – Unilabs Saltro", 'Mrt. – Mei 2022', "Bij Unilabs heb ik als pré-analist gewerkt tijdens de corona tijd. Hierbij was ik verantwoordelijk voor het verwerken van de patiëntgegevens in de systemen. Het uitpakken van het patiëntmateriaal en het gereed te maken voor analyse", 
+ "Callcenter medewerker – GGD Teleperformance", 'Dec. 2021 – Mrt. 2022', "Bij GGD teleperformance heb ik als callcenter medewerker gewerkt tijden de corona tijd. Ik heb hierbij verschillende trainingen doorlopen om de mensen telefonisch goed te woord te staan bij het maken van een test of vaccinatie afspraak", 
+ "Huishoudelijk hulp – Amaris Thuiszorg", 'Mrt. 2020 – Dec. 2021', "Bij Amaris thuiszorg was ik huishoudelijk hulp. Dit hield in dat ik bij mensen thuis kwam en hielp met het schoonhouden en opruimen van het huis. En gaf ik verdere ondersteunig om de ouderen zo lang mogelijk in hun eigen leefomgeving te laten wonen, doormiddel van een praatje maken en een signaalfunctie te vervullen", 
+ "Woonondersteuner – Vivium Torenhof", 'Mrt. – Dec. 2019', "Bij Vivium torenhof werkte ik als een woonondersteuner, dit hield in dat ik de bewoners hielp. Zo moest ik bedden verschonen, deed ik afwasjes, hulp bij de maaltijd en had ik een signaalfunctie", 
+ "Vulploegmedewerker – Kruidvat", 'Jan. – Mei 2019', "Bij de kruidvat was ik een vulploegmedewerker en zorgde ik ervoor dat alles netjes werd bijgevuld", 
+ "Afwashulp – Poffertjeskraam Laren", 'Mrt. – Sept. 2018/19/20', ""
+) %>% 
+  detailed_entries(
+    Degree,
+    Year, 
+    Desc
+  )
+```
+
+## Vaardigheden
+
+-   `R`
+-   `bash`
+-   `SPSS`
+-   `DNA baser`
+-   `Git`
+
+
+## Projecten
+
+```{r}
+library(tibble)
+tribble(
+  ~ Project, ~ Year, ~ Language, ~ Desc,
+  "RNA sequencing", "2023", "R", "Tijdens mijn betrokkenheid bij een RNA-sequencing project heb ik veel vaardigheden opgedaan. Mijn taken omvatten het uitvoeren van kwaliteitscontroles op sequentiedata met FastQC en het toepassen van de Rsubread-package voor effectieve sequentieanalyse, inclusief het in kaart brengen van sequenties naar een referentiegenoom. Ik heb de data geanalyseerd met behulp van de DESeq2-package, waarmee ik een Differential Gene Expression (DGE) analyse heb uitgevoerd. Een belangrijk aspect van mijn bijdrage was het gebruik van Principal Components Analysis (PCA) om variabiliteit tussen monsters te begrijpen en visualiseren. Voor de visualisatie van resultaten heb ik verschillende geavanceerde visualisatietechnieken toegepast, waaronder count plots, MA plots, heat maps en volcano plots. Daarnaast heb ik mijn analytische vaardigheden toegepast op het gebied van GO enrichment, waarbij ik genen heb geïdentificeerd die geassocieerd zijn met specifieke biologische processen",
+  "Single cell RNA seqeuncing", "2023", "R", "
+Tijdens mijn onderzoeksproject heb ik me verdiept in de statistische analyse van single cell RNA sequencing van tumorcellen in de hersenen, specifiek glioblastoma, met behulp van de programmeertaal R. Ik heb methoden toegepast om heterogeniteit in genexpressie op het niveau van individuele cellen te ontrafelen, waardoor ik inzicht heb verkregen in de complexe biologie van deze tumoren. Mijn analyse omvatte preprocessing van de data, identificatie van subpopulaties, differentiële expressieanalyse met behulp van het DESeq2-pakket, en visualisatie van de resultaten, waaronder tSNE-plots. Het gebruik van geavanceerde R-pakketten, zoals Seurat, stelde me in staat om diepgaande statistische inzichten te verkrijgen en de heterogeniteit van glioblastoma op een gedetailleerd niveau te onderzoeken",
+"Next Generation Sequencing (NGS) analyse", "2023", "bash", "Binnen het project NGS analyse met bash heb ik verschillende technieken geleerd. Ik heb alignments uitgevoerd op fastq files met behulp van bowtie2. Zo heb ik ook geleerd peak calling uit te voeren met HOMER en bigwig files ingelezen en geinspecteerd met de IGV genome browser. De analyse van de (bed) bestanden en de vergelijking is gedaan door middel van BedTools" 
+) %>%
+  detailed_entries(Project, Year, Language, Desc)
+
+```
+
+## Competenties
+
+-   Organisatorisch sterk
+-   Teamspeler
+-   Zelfstandig
+-   Creatief
+-   Sociaal
+
+
+## Talen
+
+-   Nederlands
+    +   Mondeling:    Uitstekend
+    +   Schriftelijk: Uitstekend 
+-   Engels
+    +   Mondeling:    Uitstekend
+    +   Schriftelijk: Uitstekend 

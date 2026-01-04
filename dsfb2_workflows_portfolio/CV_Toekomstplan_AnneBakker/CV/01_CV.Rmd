@@ -1,0 +1,13 @@
+---
+title: "CV"
+author: "Anne Bakker"
+date: "2023-12-11"
+output: html_document
+---
+
+# CV in pdf
+
+```{r pdf inlezen, echo=FALSE, out.height=400, out.width=800}
+knitr::include_graphics("C:/Users/anneb/OneDrive/Documenten/Portfolio2/dsfb2_workflows_portfolio2/CV_Toekomstplan_AnneBakker/02_CV.pdf")
+```
+
